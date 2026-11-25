@@ -58,6 +58,58 @@ div[data-testid="stTabs"] button[aria-selected="true"] {
 .stApp [data-baseweb="select"] * {
     color: #421f2b !important;
 }
+
+/* ===== HemaCheck final visual corrections ===== */
+
+/* Restore the white HemaCheck title */
+.hero h1 {
+    color: #fff8f3 !important;
+}
+
+.hero p {
+    color: #f1d9d5 !important;
+}
+
+/* Fix dark warning and information boxes */
+div[data-testid="stAlert"] {
+    background: #fff1df !important;
+    border: 1px solid #ead6b8 !important;
+    border-radius: 12px !important;
+}
+
+div[data-testid="stAlert"],
+div[data-testid="stAlert"] * {
+    color: #5b382e !important;
+}
+
+/* Make donor and recipient dropdowns light */
+.stApp [data-baseweb="select"] > div {
+    background-color: #fffaf7 !important;
+    border: 1px solid #d9c4bd !important;
+}
+
+.stApp [data-baseweb="select"] * {
+    color: #421f2b !important;
+}
+
+/* Dropdown options */
+div[role="listbox"] {
+    background-color: #fffaf7 !important;
+}
+
+div[role="option"] {
+    color: #421f2b !important;
+}
+
+/* Keep the page background light */
+.stApp {
+    background: linear-gradient(
+        145deg,
+        #fffaf8 0%,
+        #f8f2ee 55%,
+        #f4e9e5 100%
+    ) !important;
+}
 </style>
 """, unsafe_allow_html=True)
 
