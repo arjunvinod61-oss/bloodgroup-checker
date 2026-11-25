@@ -19,6 +19,45 @@ html, body, [class*="css"] {font-family:'DM Sans',sans-serif;}
 .result-bad {background:#fbe9e6;border-left:5px solid #b84e43;padding:18px;border-radius:12px;color:#762c27;}
 .note {background:#fff4df;border:1px solid #eed6a6;padding:15px 18px;border-radius:12px;color:#654b20;}
 div[data-testid="stTabs"] button {font-weight:700;}
+
+/* HemaCheck: enforce readable light-theme text */
+html, body, .stApp,
+[data-testid="stAppViewContainer"],
+[data-testid="stMain"] {
+    color-scheme: light !important;
+    color: #421f2b !important;
+}
+
+.stApp h1,
+.stApp h2,
+.stApp h3,
+.stApp h4,
+.stApp p,
+.stApp li,
+.stApp label,
+.stApp [data-testid="stWidgetLabel"] {
+    color: #421f2b !important;
+}
+
+.stApp [data-testid="stCaptionContainer"],
+.stApp [data-testid="stCaptionContainer"] p {
+    color: #795c5c !important;
+}
+
+div[data-testid="stTabs"] button {
+    color: #65434b !important;
+    opacity: 1 !important;
+}
+
+div[data-testid="stTabs"] button[aria-selected="true"] {
+    color: #c52f50 !important;
+}
+
+.stApp input,
+.stApp textarea,
+.stApp [data-baseweb="select"] * {
+    color: #421f2b !important;
+}
 </style>
 """, unsafe_allow_html=True)
 
